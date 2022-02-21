@@ -1,11 +1,11 @@
 {
   "repository": "#",
   "license": "UNLICENSED",
-  "homepage": "https://jinyya.github.io/FlowfieldMeshlineDemo",
+  "homepage": "https://jinyya.github.io/ff-demo",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
-    "predeploy": "npm run build",
+    "predeploy": "npm run dev",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
