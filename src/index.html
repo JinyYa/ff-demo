@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VR on the web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Cocreate Page</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
 </head>
+
 <body>
-    <canvas class="webgl"></canvas>
+    <div class="pageTitle">
+        <h1>Co-create</h1>
+    </div>
+    <!-- central display-->
+    <div class="centralDisplayArea">
+        <div class="sideMenuArea">
+            <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Switch Demo
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" onclick = ""> Demo 1</a>
+                    <a class="dropdown-item" href="#" onclick = ""> Demo 2</a>
+                    <a class="dropdown-item" href="#" onclick = ""> Demo 3</a>
+                    <a class="dropdown-item" href="#" onclick = ""> Demo 4</a>
+                    <a class="dropdown-item" href="#" onclick = ""> Demo 5</a>
+                </div>
+            </div>
+           
+            <div class="parameters">
+                <label>put your own parameters menu somewhere over here?</label>
+                <div class="parameter">
+                    <label>sampleParam 1</label>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" onclick = ""> 1</a>
+                            <a class="dropdown-item" href="#" onclick = ""> 2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="parameter">
+                <label>sampleParam 2</label>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" onclick = ""> 1</a>
+                            <a class="dropdown-item" href="#" onclick = ""> 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = canvasArea>
+            <!-- Canvas for threejs-->
+            <canvas class="webgl"></canvas>
+        </div>
+    </div>        
+  <div class="BottomBanner">
+    <button class="btn btn-outline-primary btn-sm"s id="exportButton">
+        export
+    </button>
+</div>
+
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>
